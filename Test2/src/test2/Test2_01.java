@@ -7,7 +7,7 @@ package test2;
 public class Test2_01{
 	
 	/**
-	 *文字列を設定し出力する
+	 *文字列を設定し、出力する
 	 */
 	public static void main(String[] args){
 		System.out.println("Hello World!");
