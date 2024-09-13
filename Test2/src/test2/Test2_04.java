@@ -15,7 +15,7 @@ public class Test2_04{
  　　*/
 	public static void main(String[] args)	{
 		
-		//xの値
+		//xの値を設定
 		int x = 7;
 		
 		x = x*3;
