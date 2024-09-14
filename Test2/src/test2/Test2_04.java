@@ -8,21 +8,22 @@ package test2;
  * 変数 x の値を半分(1/2)にする。
  * 変数 x の値を表示する。
  */
-public class Test2_04{
+public class Test2_04  {
 	
    /**
  　　*　ｘの値を設定した後、値を計算して出力する
+   *@param 引数
  　　*/
 	public static void main(String[] args)	{
 		
 		//xの値を設定
 		int x = 7;
 		
-		x = x*3;
+		x = x * 3;
 		
 		System.out.println("ｘの値は" + x + "です。");
 		
-		x = x/2;
+		x = x / 2;
 		
 		System.out.println("ｘの値は" + x + "です。");
 	}
