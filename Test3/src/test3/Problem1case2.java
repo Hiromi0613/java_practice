@@ -27,24 +27,18 @@ public class Problem1case2 {
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
 
-		/**
-		 *  @String str 入力した文字列
-		 *  @int res 点数
-		 *  @throws IOException 例外処理
-		 */		
+		// @String str 入力した文字列
 		String str = br.readLine();
+		// @int res 点数 
 		int res = Integer.parseInt(str);
 		
-		if((res >= 80) && (res <= 100)) {
+		if(res >= 80 && res <= 100) {
 			System.out.println("たいへんよくできました。");
-		}
-		else if((res >= 60) && (res < 80)) {
+		} else if(res >= 60 && res < 80) {
 			System.out.println("よくできました。");
-		}
-		else if((res >= 0) && (res < 60)) {
+		} else if(res >= 0 && res < 60) {
 			System.out.println("ざんねんでした。");
-		}
-		else {
+		} else {
 			System.out.println("点数を正しく入力してください。");
 		}
 	}

@@ -25,32 +25,24 @@ public class Problem2 {
 		
 		System.out.println("xの値を入力してください。");
 		
-		/**
-		 *  @String str1 入力した文字列
-		 *  @int res1 xの値
-		 */	
+		// @String str1 入力した文字列
 		String str1 = br.readLine();
+		//  @int res1 xの値
 		int res1 = Integer.parseInt(str1);
 		
 		System.out.println("yの値を入力してください。");
 		
-		/**
-		 *  @String str2 入力した文字列
-		 *  @int res2 yの値
-		 */	
 		String str2 = br.readLine();
+		//  @int res2 yの値
 		int res2 = Integer.parseInt(str2);
 		
-		if((res1 < res2) && (res1 % 2 == 0) && (res2 % 2 == 0)) {
+		if(res1 < res2 && res1 % 2 == 0 && res2 % 2 == 0) {
 			System.out.println("x は y より小さく、かつ、x と y は共に偶数である。");
-		}
-		else if((res1 == res2) && (res1 < 0) && (res2 < 0)) {
+		} else if(res1 == res2 && res1 < 0 && res2 < 0) {
 			System.out.println("x と y は等しく、かつ、負の数である。");
-		}
-		else if((res1 < res2) || (res1 % 2 == 0)) {
+		} else if(res1 < res2 || res1 % 2 == 0) {
 			System.out.println("x は y より小さい、または、x は偶数である。");
-		}
-		else {
+		} else {
 			System.out.println("条件に該当しません。");
 		}
 	}

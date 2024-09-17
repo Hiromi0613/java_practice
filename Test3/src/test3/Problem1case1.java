@@ -26,21 +26,16 @@ public class Problem1case1 {
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
 		
-		/**
-		 *  @String str 入力した文字列
-		 *  @int res 点数
-		 *  @throws IOException 例外処理
-		 */
+		// @String str 入力した文字列
 		String str = br.readLine();
+		// @int res 点数
 		int res = Integer.parseInt(str);
 		
-		if((res >= 60) && (res <= 100)) {
+		if(res >= 60 && res <= 100) {
 			System.out.println("合格");
-		}
-		else if((res >= 0) && (res < 60)) {
+		} else if(res >= 0 && res < 60) {
 			System.out.println("不合格");
-		}
-		else {
+		} else {
 			System.out.println("点数を正しく入力してください。");
 		}
 	}

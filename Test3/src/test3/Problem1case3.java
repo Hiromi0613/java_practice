@@ -29,26 +29,20 @@ public class Problem1case3 {
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
 		
-		/**
-		 *  @String str 入力した文字列
-		 *  @int res 点数
-		 */		
+		// @String str 入力した文字列
 		String str = br.readLine();
+		// @int res 点数
 		int res = Integer.parseInt(str);
 		
 		if((res >= 80) && (res <= 100)) {
 			System.out.println("優");
-		}
-		else if((res >= 70) && (res < 80)) {
+		} else if(res >= 70 && res < 80) {
 			System.out.println("良");
-		}
-		else if((res >= 60) && (res < 70)) {
+		} else if(res >= 60 && res < 70) {
 			System.out.println("可");
-		}
-		else if((res >= 0) && (res < 60)) {
+		} else if(res >= 0 && res < 60) {
 			System.out.println("不可");
-		}
-		else {
+		} else {
 			System.out.println("点数を正しく入力してください。");
 		}
 	}
