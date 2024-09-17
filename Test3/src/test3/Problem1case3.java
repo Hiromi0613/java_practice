@@ -34,7 +34,7 @@ public class Problem1case3 {
 		// @int res 点数
 		int res = Integer.parseInt(str);
 		
-		if((res >= 80) && (res <= 100)) {
+		if(res >= 80 && res <= 100) {
 			System.out.println("優");
 		} else if(res >= 70 && res < 80) {
 			System.out.println("良");
