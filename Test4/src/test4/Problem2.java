@@ -49,13 +49,13 @@ public class Problem2 {
 			String str1 = br.readLine();
 			List[0][i] = str1;
 	        
-	        System.out.println("単価を入力してください。");
-	        String str2 = br.readLine();
-	        List[1][i] = str2;
+			System.out.println("単価を入力してください。");
+			String str2 = br.readLine();
+			List[1][i] = str2;
 	        
-	        System.out.println("支払金額を入力してください。");
-	        String str3 = br.readLine();
-	        List[2][i] = str3;
+			System.out.println("支払金額を入力してください。");
+			String str3 = br.readLine();
+			List[2][i] = str3;
 		}
 		// @param sum 不足金額の合計
 		int sum = 0;
