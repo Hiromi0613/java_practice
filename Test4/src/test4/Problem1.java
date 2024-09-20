@@ -54,7 +54,7 @@ public class Problem1 {
 			int num = Integer.parseInt(List[2][j]);
 			
 			if(num > 0) {
-				sum = sum + 1;
+				sum++;
 			}
 		}
 		System.out.println("遅延利息金が発生している人数は" + sum + "人です。");

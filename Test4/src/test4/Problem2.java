@@ -47,7 +47,7 @@ public class Problem2 {
 		for(int i = 0; i < 3; i++) {
 			System.out.println("商品を入力してください。");
 			String str1 = br.readLine();
-	        List[0][i] = str1;
+			List[0][i] = str1;
 	        
 	        System.out.println("単価を入力してください。");
 	        String str2 = br.readLine();
