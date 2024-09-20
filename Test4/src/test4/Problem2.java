@@ -66,12 +66,13 @@ public class Problem2 {
 			// @param pay 支払金額
 			int pay = Integer.parseInt(List[2][j]);
 			
-			if(price <= pay) {
-				System.out.println(List[0][j] + "、" + List[1][j] + "、支払金額過不足無し");
-			}
-			else {
+			if(price < pay) {
+				System.out.println(List[0][j] + "、" + List[1][j] + "、支払金額過払い");
+			} else if(price > pay) {
 				System.out.println(List[0][j] + "、" + List[1][j] + "、支払金額不足");
 				sum = sum + (price - pay);
+			} else {
+				System.out.println(List[0][j] + "、" + List[1][j] + "、支払金額過不足無し");
 			}
 		}
 		System.out.println("全体の不足金：" + sum + "円");
