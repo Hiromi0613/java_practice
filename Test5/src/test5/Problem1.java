@@ -17,30 +17,6 @@ import java.io.InputStreamReader;
 */
 
 /**
- * @param itemName 商品名
- * @param price 金額
- * @param tax　消費税率（１０％）
- * @getTotalPrice 金額から税込み価格を計算
- */
-class Item {
-	String itemName;
-	double price;
-	double tax = 0.1;
-	
-	void setItemNamePrice(String n, double p) {
-		itemName = n;
-		price = p;
-	}
-	String getItemName() {
-		return itemName;
-	}
-	double getTotalPrice() {
-		return price + price * tax;
-	}
-	
-}
-
-/**
  * 商品名と金額を入力し、金額を税込み価格に変換後、商品名と購入額を出力する
  * @param args 実行引数
  */
@@ -60,7 +36,8 @@ public class Problem1 {
 		String str2 = br.readLine();
 		double res = Integer.parseInt(str2);
 		
-		item1.setItemNamePrice(str1, res);
+		item1.setName(str1);
+		item1.setPrice(res);
 		
 		item1.getItemName();
 		
