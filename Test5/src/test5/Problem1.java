@@ -18,9 +18,14 @@ import java.io.InputStreamReader;
 
 /**
  * 商品名と金額を入力し、金額を税込み価格に変換後、商品名と購入額を出力する
- * @param args 実行引数
  */
 public class Problem1 {
+	/**
+	 * mainメソッド
+	 * 入力した引数をitemメソッドに渡して結果を出力する
+	 * @param args 実行引数
+	 * @throws IOException　例外処理
+	 */
 	public static void main(String[] args)throws IOException {
 		Item item1 = new Item();
 		
@@ -34,12 +39,12 @@ public class Problem1 {
 		System.out.println("金額を入力してください。");
 		
 		String str2 = br.readLine();
-		double res = Integer.parseInt(str2);
+		int res = Integer.parseInt(str2);
 		
 		item1.setName(str1);
 		item1.setPrice(res);
 		
-		item1.getItemName();
+		String ItemName = item1.getItemName();
 		
 		double totalPrice = item1.getTotalPrice();
 		int totalPriceInt = (int)totalPrice;
