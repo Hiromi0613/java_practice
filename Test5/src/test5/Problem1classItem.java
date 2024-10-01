@@ -4,17 +4,11 @@ package test5;
  * 商品名と金額の引数を受け取り、金額に消費税を足し、結果を元のクラスに戻す
  */
 class Item {
-	/**
-	 *  @param Name 商品名
-	 */
+	/**　商品名　*/
 	public String Name;
-	/**
-	 * @param price 金額
-	 */
+	/**　金額　*/
 	public int price;
-	/**
-	 * @param tax　消費税率（１０％）
-	 */
+	/**　消費税率（１０％）　*/
 	public final double tax = 0.1;
 
 	/**
