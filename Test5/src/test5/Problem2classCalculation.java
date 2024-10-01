@@ -25,6 +25,7 @@ class Calculation {
 	public void setNum1(double n1) {
 		this.num1 = n1;
 	}
+	
 	/**
 	 * setNum2メソッド
 	 * 二つ目の数値の引数を変数num2に代入する
@@ -33,6 +34,7 @@ class Calculation {
 	public void setNum2(double n2) {
 		this.num2 = n2;
 	}
+	
 	/**
 	 * setOperatorメソッド
 	 * 演算子の引数を変数oに代入する
@@ -41,6 +43,7 @@ class Calculation {
 	public void setOperator(String o) {
 		this.ope = o;
 	}
+	
 	/**
 	 * getReaultメソッド
 	 * 演算子に沿った計算をし、結果を出力する
