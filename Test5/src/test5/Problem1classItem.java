@@ -8,12 +8,10 @@ class Item {
 	 *  @param Name 商品名
 	 */
 	public String Name;
-	
 	/**
 	 * @param price 金額
 	 */
 	public int price;
-	
 	/**
 	 * @param tax　消費税率（１０％）
 	 */
