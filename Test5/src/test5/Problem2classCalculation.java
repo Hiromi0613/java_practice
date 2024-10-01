@@ -22,8 +22,8 @@ class Calculation {
 	 * 一つ目の数値の引数を変数num1に代入する
 	 * @param n1 一つ目の数値の引数
 	 */
-	public void setNum1(double n1) {
-		this.num1 = n1;
+	public void setNum1(double num1) {
+		this.num1 = num1;
 	}
 	
 	/**
@@ -31,8 +31,8 @@ class Calculation {
 	 * 二つ目の数値の引数を変数num2に代入する
 	 * @param n2　一つ目の数値の引数
 	 */
-	public void setNum2(double n2) {
-		this.num2 = n2;
+	public void setNum2(double num2) {
+		this.num2 = num2;
 	}
 	
 	/**
@@ -40,8 +40,8 @@ class Calculation {
 	 * 演算子の引数を変数oに代入する
 	 * @param o　演算子の引数
 	 */
-	public void setOperator(String o) {
-		this.ope = o;
+	public void setOperator(String ope) {
+		this.ope = ope;
 	}
 	
 	/**
