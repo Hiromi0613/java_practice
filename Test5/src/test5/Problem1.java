@@ -44,7 +44,7 @@ public class Problem1 {
 		item1.setName(str1);
 		item1.setPrice(res);
 		
-		String ItemName = item1.getItemName();
+		String itemName = item1.getItemName();
 		
 		double totalPrice = item1.getTotalPrice();
 		int totalPriceInt = (int)totalPrice;
