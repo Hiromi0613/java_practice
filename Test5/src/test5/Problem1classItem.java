@@ -8,10 +8,12 @@ class Item {
 	 *  @param Name 商品名
 	 */
 	public String Name;
+	
 	/**
 	 * @param price 金額
 	 */
 	public int price;
+	
 	/**
 	 * @param tax　消費税率（１０％）
 	 */
@@ -25,6 +27,7 @@ class Item {
 	public void setName(String n) {
 		this.Name = n;
 	}
+	
 	/**
 	 * setPriceメソッド
 	 * 受け取ったint型の引数pを変数priceに代入する
@@ -33,6 +36,7 @@ class Item {
 	public void setPrice(int p) {
 		this.price = p;
 	}
+	
 	/**
 	 * getItemNameメソッド
 	 * String型の変数Nameを返す
@@ -41,6 +45,7 @@ class Item {
 	public String getItemName() {
 		return Name;
 	}
+	
 	/**
 	 * getTotalPriceメソッド
 	 * 金額に消費税を足して返す
