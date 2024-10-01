@@ -5,7 +5,7 @@ package test5;
  */
 class Item {
 	/**　商品名　*/
-	public String Name;
+	public String name;
 	/**　金額　*/
 	public int price;
 	/**　消費税率（１０％）　*/
@@ -16,8 +16,8 @@ class Item {
 	 * 受け取ったString型の引数nを変数Nameに代入する
 	 * @param n　商品名の引数
 	 */
-	public void setName(String n) {
-		this.Name = n;
+	public void setName(String name) {
+		this.name = name;
 	}
 	
 	/**
@@ -25,17 +25,17 @@ class Item {
 	 * 受け取ったint型の引数pを変数priceに代入する
 	 * @param p　金額の引数
 	 */
-	public void setPrice(int p) {
-		this.price = p;
+	public void setPrice(int price) {
+		this.price = price;
 	}
 	
 	/**
 	 * getItemNameメソッド
-	 * String型の変数Nameを返す
-	 * @return　変数Name
+	 * String型の変数nameを返す
+	 * @return　変数name
 	 */
 	public String getItemName() {
-		return Name;
+		return name;
 	}
 	
 	/**
