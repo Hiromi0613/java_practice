@@ -20,9 +20,14 @@ import java.io.InputStreamReader;
 
 /**
  * ２つの値と演算子を入力し、計算結果を出力する
- * @param args 実行引数
  */
 public class Problem2 {
+	/**
+	 * mainメソッド
+	 * 入力した２つの数値と演算子をCalculationメソッドに渡し、結果を出力する
+	 * @param args　実行引数
+	 * @throws IOException　例外処理
+	 */
 	public static void main(String[] args)throws IOException {
 		Calculation c1 = new Calculation();
 		
