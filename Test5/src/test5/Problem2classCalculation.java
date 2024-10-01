@@ -66,7 +66,7 @@ class Calculation {
 		    	break;
 		    default:
 		    	System.out.println("正しい演算子を入力してください。");
-	}
+	        }
 		System.out.println("計算結果：" + result);
 	}
 }
