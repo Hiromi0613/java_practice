@@ -3,7 +3,7 @@ package test5;
 /**
  * 商品名と金額の引数を受け取り、金額に消費税を足し、結果を元のクラスに戻す
  */
-public class Item {
+public class Problem1classItem {
 	/**　商品名　*/
 	public String name;
 	/**　金額　*/
