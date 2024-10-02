@@ -17,7 +17,6 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 
-
 /**
  * ２つの値と演算子を入力し、計算結果を出力する
  */
@@ -45,7 +44,8 @@ public class Problem2 {
 		System.out.println("演算子を入力してください。");
 		String str3 = br.readLine();
 		
-		c1.setNum(res1, res2);
+		c1.setNum1(res1);
+		c1.setNum2(res2);
 		c1.setOperator(str3);
 		
 		c1.getResult();
