@@ -3,7 +3,7 @@ package test5;
 /**
  * 受けとった２つの数値と演算子から計算結果を出力する
  */
-class Calculation {
+public class Calculation {
 	/**
 	 *  @param num1 入力した一つ目の数値
 	 */
@@ -29,7 +29,7 @@ class Calculation {
 	/**
 	 * setNum2メソッド
 	 * 二つ目の数値の引数を変数num2に代入する
-	 * @param n2　一つ目の数値の引数
+	 * @param num2　一つ目の数値の引数
 	 */
 	public void setNum2(double num2) {
 		this.num2 = num2;
@@ -38,10 +38,10 @@ class Calculation {
 	/**
 	 * setOperatorメソッド
 	 * 演算子の引数を変数oに代入する
-	 * @param o　演算子の引数
+	 * @param ope　演算子の引数
 	 */
-	public void setOperator(String ope) {
-		this.ope = ope;
+	public void setOperator(String operator) {
+		this.ope = operator;
 	}
 	
 	/**
