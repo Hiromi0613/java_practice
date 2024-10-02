@@ -46,8 +46,7 @@ public class Problem1 {
 		
 		String itemName = item1.getItemName();
 		
-		double totalPrice = item1.getTotalPrice();
-		int totalPriceInt = (int)totalPrice;
+		int totalPriceInt = (int) item1.getTotalPrice();
 		
 		System.out.println("購入額：" + totalPriceInt + "円");
 		
