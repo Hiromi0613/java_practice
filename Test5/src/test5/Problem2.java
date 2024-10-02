@@ -28,7 +28,7 @@ public class Problem2 {
 	 * @throws IOException　例外処理
 	 */
 	public static void main(String[] args)throws IOException {
-		Calculation c1 = new Calculation();
+		Problem2classCalculation c1 = new Problem2classCalculation();
 		
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
