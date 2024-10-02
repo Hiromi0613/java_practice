@@ -18,7 +18,7 @@ package test6ver2;
 /**
  * 入力した情報をInfクラスに渡し、戻り値を出力する
  */
-public class Problem2ver2 {										
+public class Problem2 {										
         /**														
          * 入力した情報を人物ごとに表示する														
          * @param args 実行引数														

@@ -3,7 +3,7 @@ package test6ver2;
 /**
  * 名前、年齢、住所、電話番号の引数を受け取り、元のクラスに戻す
  */
-class Inf {														
+public class Inf {														
 	/** 名前 */ 														
 	private String name;														
 	/** 年齢 */														
@@ -24,7 +24,7 @@ class Inf {
 	/**
 	 * setNameメソッド
 	 * 受け取った名前の引数を変数nameに代入する
-	 * @param n 名前の引数
+	 * @param name 名前の引数
 	 */
 	public void setName(String name) {														
 		this.name = name;														
@@ -33,7 +33,7 @@ class Inf {
 	/**
 	 * setAgeメソッド
 	 * 受け取ったint型の年齢の引数を変数ageに代入する
-	 * @param ai 年齢の引数
+	 * @param ageInt 年齢の引数
 	 */
 	public void setAge(int ageInt) {														
 		this.age = ageInt;														
@@ -42,7 +42,7 @@ class Inf {
 	/**
 	 * setAgeメソッド
 	 * 受け取ったstring型の年齢の引数を変数ageに代入する
-	 * @param as 年齢の引数
+	 * @param ageString 年齢の引数
 	 */														
 	public void setAge(String ageString) {														
 		int ageInt2 = Integer.parseInt(ageString);														
@@ -52,7 +52,7 @@ class Inf {
 	/**
 	 * setAddressメソッド
 	 * 受け取った住所の引数を変数Addressに代入する
-	 * @param ad 住所の引数
+	 * @param address 住所の引数
 	 */												
 	public void setAddress(String address) {														
 		this.address = address;														
@@ -61,7 +61,7 @@ class Inf {
 	/**
 	 * setTelnumメソッド
 	 * 受け取った電話番号の引数を変数telnumに代入する
-	 * @param t 電話番号の引数
+	 * @param telnum 電話番号の引数
 	 */													
 	public void setTelnum(String telnum) {														
 		this.telnum = telnum;														
