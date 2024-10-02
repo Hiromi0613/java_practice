@@ -3,7 +3,7 @@ package test5;
 /**
  * 受けとった２つの数値と演算子から計算結果を出力する
  */
-public class Calculation {
+public class Problem2classCalculation {
 	/** 入力した一つ目の数値 */
 	public double num1;
 	/** 入力した二つ目の数値 */
