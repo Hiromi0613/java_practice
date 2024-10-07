@@ -16,7 +16,7 @@ package test6ver2;
 */	
 
 /**
- * 入力した情報をInformationクラスに渡し、戻り値を出力する
+ * 入力した情報をPersonalInfクラスに渡し、戻り値を出力する
  */
 public class Problem2 {										
         /**														
@@ -24,27 +24,43 @@ public class Problem2 {
          * @param args 実行引数														
          */														
 	public static void main(String[] args) {
+		String[][] List;
+		List = new String[4][3];
+		
+		List[0][0] = "山田";
+		List[0][1] = "鈴木";
+		List[0][2] = "田中";
+		List[1][0] = "２６";
+		List[1][1] = "３３";
+		List[1][2] = "４１";
+		List[2][0] = "東京大田区大森";
+		List[2][1] = "和歌山県和歌山市";
+		List[2][2] = "宮城県仙台市";
+		List[3][0] = "090-0000-0000";
+		List[3][1] = "090-1111-2222";
+		List[3][2] = "090-3333-4444";
+		
 		PersonalInf[] personalInf = new PersonalInf[3];
 		
 		personalInf[0] = new PersonalInf();
 		personalInf[1] = new PersonalInf();
 		personalInf[2] = new PersonalInf();
-																
-		personalInf[0].setName("山田");														
-		personalInf[0].setAge("26");														
-		personalInf[0].setAddress("東京大田区大森");														
-		personalInf[0].setTelnum("090-0000-0000");
 		
-		personalInf[1].setName("鈴木");														
-		personalInf[1].setAge("33");														
-		personalInf[1].setAddress("和歌山県和歌山市");														
-		personalInf[1].setTelnum("090-1111-2222");
+		personalInf[0].setName(List[0][0]);
+		personalInf[0].setAge(List[1][0]);
+		personalInf[0].setAddress(List[2][0]);
+		personalInf[0].setTelNum(List[3][0]);
 		
-		personalInf[2].setName("田中");														
-		personalInf[2].setAge("41");														
-		personalInf[2].setAddress("宮城県仙台市");														
-		personalInf[2].setTelnum("090-3333-4444");
-																		
+		personalInf[1].setName(List[0][1]);
+		personalInf[1].setAge(List[1][1]);
+		personalInf[1].setAddress(List[2][1]);
+		personalInf[1].setTelNum(List[3][1]);
+		
+		personalInf[2].setName(List[0][2]);
+		personalInf[2].setAge(List[1][2]);
+		personalInf[2].setAddress(List[2][2]);
+		personalInf[2].setTelNum(List[3][2]);
+				
 		for(int i = 0; i < 3; i++) {		
 			System.out.println("私の名前は" + personalInf[i].getName() + "です。年齢は" + personalInf[i].getAge() + "です。住所は" + personalInf[i].getAddress() + "です。電話番号は" + personalInf[i].getTelnum() + "です。");
 		}	

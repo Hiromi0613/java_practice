@@ -11,7 +11,7 @@ public class PersonalInf {
 	/** 住所 */														
 	private String address;														
 	/** 電話番号 */														
-	private String telnum;	
+	private String telNum;	
 	
 	/**
 	 * 初期化する
@@ -20,7 +20,7 @@ public class PersonalInf {
 		name = null;														
 		age = 0;														
 		address = null;														
-		telnum = null;														
+		telNum = null;														
 	}
 
 	/**
@@ -37,8 +37,8 @@ public class PersonalInf {
 	 * 受け取ったint型の年齢の引数を変数ageに代入する
 	 * @param ageInt 年齢の引数
 	 */
-	public void setAge(int ageInt) {														
-		this.age = ageInt;														
+	public void setAge(int age) {														
+		this.age = age;														
 	}
 
 	/**
@@ -46,9 +46,8 @@ public class PersonalInf {
 	 * 受け取ったstring型の年齢の引数を変数ageに代入する
 	 * @param ageString 年齢の引数
 	 */														
-	public void setAge(String ageString) {														
-		int ageInt2 = Integer.parseInt(ageString);														
-		this.age = ageInt2;														
+	public void setAge(String age) {														
+		this.age = Integer.parseInt(age);														
 	}	
 
 	/**
@@ -62,11 +61,11 @@ public class PersonalInf {
 
 	/**
 	 * setTelnumメソッド
-	 * 受け取った電話番号の引数を変数telnumに代入する
-	 * @param telnum 電話番号の引数
+	 * 受け取った電話番号の引数を変数telNumに代入する
+	 * @param telNum 電話番号の引数
 	 */													
-	public void setTelnum(String telnum) {														
-		this.telnum = telnum;														
+	public void setTelNum(String telNum) {														
+		this.telNum = telNum;														
 	}	
 
 	/**
@@ -98,10 +97,10 @@ public class PersonalInf {
 
 	/**
 	 * getTelnumメソッド
-	 * String型の変数telnumを返す
-	 * @return　変数telnum
+	 * String型の変数telNumを返す
+	 * @return　変数telNum
 	 */																										
 	public String getTelnum() {														
-		return telnum;														
+		return telNum;														
 	}														
 }
