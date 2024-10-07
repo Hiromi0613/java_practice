@@ -16,45 +16,38 @@ package test6ver2;
 */	
 
 /**
- * 入力した情報をInfクラスに渡し、戻り値を出力する
+ * 入力した情報をInformationクラスに渡し、戻り値を出力する
  */
 public class Problem2 {										
         /**														
          * 入力した情報を人物ごとに表示する														
          * @param args 実行引数														
          */														
-	public static void main(String[] args) {														
-		String[][] List;														
-		List = new String[4][3];														
+	public static void main(String[] args) {
+		PersonalInf[] personalInf = new PersonalInf[3];
 		
-		List[0][0] = "山田";														
-		List[0][1] = "鈴木";														
-		List[0][2] = "田中";														
-		List[1][0] = "26";														
-		List[1][1] = "33";														
-		List[1][2] = "41";														
-		List[2][0] = "東京大田区大森";														
-		List[2][1] = "和歌山県和歌山市";													
-		List[2][2] = "宮城県仙台市";														
-		List[3][0] = "090-0000-0000";														
-		List[3][1] = "090-1111-2222";														
-		List[3][2] = "090-3333-4444";														
+		personalInf[0] = new PersonalInf();
+		personalInf[1] = new PersonalInf();
+		personalInf[2] = new PersonalInf();
+																
+		personalInf[0].setName("山田");														
+		personalInf[0].setAge("26");														
+		personalInf[0].setAddress("東京大田区大森");														
+		personalInf[0].setTelnum("090-0000-0000");
 		
-		for(int i = 0; i < 3; i++) {														
-			Inf inf = new Inf();														
-			
-			inf.setName(List[0][i]);														
-			inf.setAge(List[1][i]);														
-			inf.setAddress(List[2][i]);														
-			inf.setTelnum(List[3][i]);														
-			
-			String userName = inf.getName();														
-			int userAge = inf.getAge();														
-			String userAddress = inf.getAddress();														
-			String userTelnum = inf.getTelnum();														
-			
-			System.out.println("私の名前は" + userName + "です。年齢は" + userAge + "です。住所は" + userAddress + "です。電話番号は" + userTelnum + "です。");														
-			}														
-	}
+		personalInf[1].setName("鈴木");														
+		personalInf[1].setAge("33");														
+		personalInf[1].setAddress("和歌山県和歌山市");														
+		personalInf[1].setTelnum("090-1111-2222");
+		
+		personalInf[2].setName("田中");														
+		personalInf[2].setAge("41");														
+		personalInf[2].setAddress("宮城県仙台市");														
+		personalInf[2].setTelnum("090-3333-4444");
+																		
+		for(int i = 0; i < 3; i++) {		
+			System.out.println("私の名前は" + personalInf[i].getName() + "です。年齢は" + personalInf[i].getAge() + "です。住所は" + personalInf[i].getAddress() + "です。電話番号は" + personalInf[i].getTelnum() + "です。");
+		}	
+	}														
 }
 						
