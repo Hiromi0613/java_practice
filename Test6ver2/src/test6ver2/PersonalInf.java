@@ -35,7 +35,7 @@ public class PersonalInf {
 	/**
 	 * setAgeメソッド
 	 * 受け取ったint型の年齢の引数を変数ageに代入する
-	 * @param ageInt 年齢の引数
+	 * @param age 年齢の引数
 	 */
 	public void setAge(int age) {														
 		this.age = age;														
@@ -44,7 +44,7 @@ public class PersonalInf {
 	/**
 	 * setAgeメソッド
 	 * 受け取ったstring型の年齢の引数を変数ageに代入する
-	 * @param ageString 年齢の引数
+	 * @param age 年齢の引数
 	 */														
 	public void setAge(String age) {														
 		this.age = Integer.parseInt(age);														
