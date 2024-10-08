@@ -1,4 +1,7 @@
-package test6ver2;														
+package test6ver2;		
+
+import java.util.List;
+import java.util.ArrayList;
 														
 /**														
 *以下条件を満たしたクラスを作成し、指定した文言を出力してください。														
@@ -16,7 +19,7 @@ package test6ver2;
 */	
 
 /**
- * 入力した情報をPersonalInfクラスに渡し、戻り値を出力する
+ * 入力した情報をPersonalクラスに渡し、戻り値を出力する
  */
 public class Problem2 {										
         /**														
@@ -24,45 +27,19 @@ public class Problem2 {
          * @param args 実行引数														
          */														
 	public static void main(String[] args) {
-		String[][] List;
-		List = new String[4][3];
+		Personal yamada = new Personal("山田","２６","東京大田区大森","090-0000-0000");
+		Personal suzuki = new Personal("鈴木","33","和歌山県和歌山市","090-1111-2222");
+		Personal tanaka = new Personal("田中","４１","宮城県仙台市","090-3333-4444");
 		
-		List[0][0] = "山田";
-		List[0][1] = "鈴木";
-		List[0][2] = "田中";
-		List[1][0] = "２６";
-		List[1][1] = "３３";
-		List[1][2] = "４１";
-		List[2][0] = "東京大田区大森";
-		List[2][1] = "和歌山県和歌山市";
-		List[2][2] = "宮城県仙台市";
-		List[3][0] = "090-0000-0000";
-		List[3][1] = "090-1111-2222";
-		List[3][2] = "090-3333-4444";
+		List<Personal> list = new ArrayList<Personal>();
 		
-		PersonalInf[] personalInf = new PersonalInf[3];
+		list.add(yamada);
+		list.add(suzuki);
+		list.add(tanaka);
 		
-		personalInf[0] = new PersonalInf();
-		personalInf[1] = new PersonalInf();
-		personalInf[2] = new PersonalInf();
-		
-		personalInf[0].setName(List[0][0]);
-		personalInf[0].setAge(List[1][0]);
-		personalInf[0].setAddress(List[2][0]);
-		personalInf[0].setTelNum(List[3][0]);
-		
-		personalInf[1].setName(List[0][1]);
-		personalInf[1].setAge(List[1][1]);
-		personalInf[1].setAddress(List[2][1]);
-		personalInf[1].setTelNum(List[3][1]);
-		
-		personalInf[2].setName(List[0][2]);
-		personalInf[2].setAge(List[1][2]);
-		personalInf[2].setAddress(List[2][2]);
-		personalInf[2].setTelNum(List[3][2]);
 				
 		for(int i = 0; i < 3; i++) {		
-			System.out.println("私の名前は" + personalInf[i].getName() + "です。年齢は" + personalInf[i].getAge() + "です。住所は" + personalInf[i].getAddress() + "です。電話番号は" + personalInf[i].getTelnum() + "です。");
+			System.out.println("私の名前は" + list.get(i).getName() + "です。年齢は" + list.get(i).getAge() + "です。住所は" + list.get(i).getAddress() + "です。電話番号は" + list.get(i).getTelnum() + "です。");
 		}	
 	}														
 }

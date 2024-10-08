@@ -3,11 +3,11 @@ package test6ver2;
 /**
  * 名前、年齢、住所、電話番号の引数を受け取り、元のクラスに戻す
  */
-public class PersonalInf {														
+public class Personal {														
 	/** 名前 */ 														
 	private String name;														
 	/** 年齢 */														
-	private int age;														
+	private String age;														
 	/** 住所 */														
 	private String address;														
 	/** 電話番号 */														
@@ -16,11 +16,11 @@ public class PersonalInf {
 	/**
 	 * 初期化する
 	 */
-	public PersonalInf() {
-		name = null;														
-		age = 0;														
-		address = null;														
-		telNum = null;														
+	public Personal(String name,String age,String address,String telNum) {
+		this.name = name;														
+		this.age = age;														
+		this.address = address;														
+		this.telNum = telNum;														
 	}
 
 	/**
@@ -37,8 +37,8 @@ public class PersonalInf {
 	 * 受け取ったint型の年齢の引数を変数ageに代入する
 	 * @param age 年齢の引数
 	 */
-	public void setAge(int age) {														
-		this.age = age;														
+	public void setAge(int age) {	
+		this.age = String.valueOf(age);														
 	}
 
 	/**
@@ -47,7 +47,7 @@ public class PersonalInf {
 	 * @param age 年齢の引数
 	 */														
 	public void setAge(String age) {														
-		this.age = Integer.parseInt(age);														
+		this.age = age;														
 	}	
 
 	/**
@@ -82,7 +82,7 @@ public class PersonalInf {
 	 * int型の変数ageを返す
 	 * @return　変数age
 	 */													
-	public int getAge() {														
+	public String getAge() {														
 		return age;														
 	}		
 
