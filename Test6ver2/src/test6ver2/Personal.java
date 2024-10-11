@@ -15,8 +15,12 @@ public class Personal {
 	
 	/**
 	 * 初期化する
+	 * @param name　名前
+	 * @param age　年齢
+	 * @param address　住所
+	 * @param telNum 電話番号
 	 */
-	public Personal(String name,String age,String address,String telNum) {
+	public Personal(String name, String age, String address, String telNum) {
 		this.name = name;														
 		this.age = age;														
 		this.address = address;														
