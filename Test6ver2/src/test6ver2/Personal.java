@@ -104,7 +104,7 @@ public class Personal {
 	 * String型の変数telNumを返す
 	 * @return　変数telNum
 	 */																										
-	public String getTelnum() {														
+	public String getTelNum() {														
 		return telNum;														
 	}														
 }

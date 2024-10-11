@@ -34,7 +34,7 @@ public class Problem2 {
 		list.add(new Personal("田中","４１","宮城県仙台市","090-3333-4444"));
 		
 		for(Personal personal : list) {
-			System.out.println("私の名前は" + personal.getName() + "です。年齢は" + personal.getAge() + "です。住所は" + personal.getAddress() + "です。電話番号は" + personal.getTelnum() + "です。");
+			System.out.println("私の名前は" + personal.getName() + "です。年齢は" + personal.getAge() + "です。住所は" + personal.getAddress() + "です。電話番号は" + personal.getTelNum() + "です。");
 		}	
 	}														
 }
