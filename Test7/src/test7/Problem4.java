@@ -32,9 +32,9 @@ public class Problem4 {
 		System.out.println("くだものを表示します。");
 		
 		String[] array = str.split(",");
-		
-		for(int i = 0; i < array.length; i++) {
-			System.out.println(array[i]);
+
+		for(String str2 : array) {
+			System.out.println(str2);
 		}
  	}
 }
