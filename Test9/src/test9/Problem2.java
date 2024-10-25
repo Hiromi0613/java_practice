@@ -56,16 +56,10 @@ public class Problem2 {
 		String str2 = br.readLine();
 		int age = Integer.parseInt(str2);
 		
-		if(mode == 1) {
-			ProcessA processA = new ProcessA();
-			processA.check(name, age);
-			processA.run();
-		} else if(mode == 2) {
-			ProcessB processB = new ProcessB();
-			processB.check(name, age);
-			processB.run();
-		} else {
-			System.out.println("１か２を入力してください。");
-		}
+		ServiceManager manager = new ServiceManager();
+		Process service = manager.getInstance(mode);
+		
+		service.check(name, age);
+		service.run();
 	}
 }

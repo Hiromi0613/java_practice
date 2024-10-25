@@ -53,12 +53,11 @@ public class Problem1 {
 		String str3 = br.readLine();
 		int num2 = Integer.parseInt(str3);
 		
-		Computation computation = new Computation();
+		CalculateManager manager = new CalculateManager();
+		CalculateBase base = manager.getInstance(operator);
 		
-		computation.setOperator(operator);
+		base.calculate(num1, num2);
 		
-		computation.calculate(num1, num2);
-		
-		computation.show();
+		base.show();
 	}
 }
