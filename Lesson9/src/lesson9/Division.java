@@ -1,29 +1,35 @@
 package lesson9;
 
+/**
+ * Divisionクラス
+ * CalculateBaseインターフェースを実装
+ */
 public class Division implements CalculateBase {
-	/** 計算結果 */
-	private int result;
-	
-	Number number = new Number();
+	/** 数値１ */
+	private int x;
+	/** 数値２ */
+	private int y;
 	
 	/**
 	 * calculateメソッド
 	 * xをyで割る
-	 * @param x 一つ目の値の引数
-	 * @param y 二つ目の値の引数
+	 * @param x 数値１
+	 * @param y 数値２
+	 * @return 計算結果
 	 */
-	public void calculate(int x, int y) {
-		number.setNum1(x);
-		number.setNum2(y);
-		
-		this.result = number.getNum1() / number.getNum2();
+	public int calculate(int x, int y) {
+		this.x = x;
+		this.y = y;
+			
+		return  x / y;
 	}
 	
 	/**
 	 * showメソッド
 	 * 計算結果を出力
+	 * @param result 計算結果
 	 */
-	public void show() {
-		System.out.println(number.getNum1() + "/" + number.getNum2() + "=" + result);
+	public void show(int result) {
+		System.out.println(x + "/" + y + "=" + result);
 	}
 }

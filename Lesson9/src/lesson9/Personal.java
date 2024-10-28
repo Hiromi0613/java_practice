@@ -1,5 +1,8 @@
 package lesson9;
 
+/**
+ * Personalクラス
+ */
 public class Personal {
 	/** 名前 */
 	private String name;

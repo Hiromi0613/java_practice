@@ -44,20 +44,33 @@ public class Problem1 {
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
 		
+		// 演算子を入力
 		String str1 = br.readLine();
 		int operator = Integer.parseInt(str1);
 		
+		// 数値１を入力
 		String str2 = br.readLine();
 		int num1 = Integer.parseInt(str2);
 		
+		// 数値２を入力
 		String str3 = br.readLine();
 		int num2 = Integer.parseInt(str3);
+		
+		Number number = new Number();
+		
+		number.setNum1(num1);
+		number.setNum2(num2);
+		
+		int inputNum1 = number.getNum1();
+		int inputNum2 = number.getNum2();
 		
 		CalculateManager manager = new CalculateManager();
 		CalculateBase base = manager.getInstance(operator);
 		
-		base.calculate(num1, num2);
+		// 計算
+		int result = base.calculate(inputNum1, inputNum2);
 		
-		base.show();
+		// 計算結果出力
+		base.show(result);
 	}
 }

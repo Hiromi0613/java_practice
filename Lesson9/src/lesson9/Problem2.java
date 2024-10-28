@@ -48,18 +48,36 @@ public class Problem2 {
 		BufferedReader br =
 				new BufferedReader(new InputStreamReader(System.in));
 		
+		// 処理モード入力
 		String str1 = br.readLine();
 		int mode = Integer.parseInt(str1);
 		
+		// 名前入力
 		String name = br.readLine();
 		
+		// 年齢入力
 		String str2 = br.readLine();
 		int age = Integer.parseInt(str2);
+		
+		Personal personal = new Personal();
+		
+		personal.setName(name);
+		personal.setAge(age);
+		
+		String inputName = personal.getName();
+		int inputAge = personal.getAge();
 		
 		ServiceManager manager = new ServiceManager();
 		Process service = manager.getInstance(mode);
 		
-		service.check(name, age);
+		// 名前、年齢入力チェック
+		boolean result = service.check(inputName, inputAge);
+		
+		if(!result) {
+			System.exit(0);
+		}
+		
+		// 処理実行
 		service.run();
 	}
 }

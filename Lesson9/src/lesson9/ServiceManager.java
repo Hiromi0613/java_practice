@@ -11,8 +11,8 @@ public class ServiceManager {
 	private Map<Integer, Process> ProcessMap;
 	
 	/**
-	   * コンストラクタ
-	   */
+	 * コンストラクタ
+	 */
 	public ServiceManager() {
 		this.ProcessMap = new HashMap<Integer, Process>();
 		this.ProcessMap.put(1, new ProcessA());
@@ -21,6 +21,8 @@ public class ServiceManager {
 	
 	/**
 	 * インスタンス取得
+	 * @param mode　処理モードを割り当てられた値
+	 * @return　処理モードを割り当てられた値毎にProcessMapに格納されたnew コンストラクタ名
 	 */
 	public Process getInstance(int mode) {
 		return this.ProcessMap.get(mode);

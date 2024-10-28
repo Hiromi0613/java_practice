@@ -1,16 +1,14 @@
 package lesson9;
 
-interface Process {
-	abstract void check(String name, int age);
-	abstract void run();
-}
-
 /**
  * PersonalAクラス
  * Processインターフェースを実装
  */
 public class ProcessA implements Process {	
-	Personal personal = new Personal();
+	/** 名前 */
+	String name;
+	/** 年齢 */
+	int age;
 	
 	/**
 	 * checkメソッド
@@ -19,17 +17,14 @@ public class ProcessA implements Process {
 	 * @param name 名前
 	 * @param age 年齢
 	 */
-	public void check(String name, int age) {	
-		personal.setName(name);
-		personal.setAge(age);
+	public boolean check(String name, int age) {
+		this.name = name;
+		this.age = age;
 		
-		String checkName = personal.getName();
-		int checkAge = personal.getAge();
-		
-		if(checkName.length() < 10 && (checkAge >= 0 && checkAge <= 140)) {
-			return;	
+		if(name.length() < 10 && (age >= 0 && age <= 140)) {
+			return true;	
 		} else {
-			System.exit(0);
+			return false;
 		}
 	}
 	
@@ -38,6 +33,6 @@ public class ProcessA implements Process {
 	 * 出力する
 	 */
 	public void run() {
-		System.out.println("私の名前は" + personal.getName() + "です。年齢は" + personal.getAge() + "です。");
+		System.out.println("私の名前は" + name + "です。年齢は" + age + "です。");
 	}
 }

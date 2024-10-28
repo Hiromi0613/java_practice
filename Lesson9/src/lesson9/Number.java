@@ -1,23 +1,42 @@
 package lesson9;
 
+/**
+ * Numberクラス
+ */
 public class Number {
-	/** 一つ目の値 */
+	/** 数値１ */
 	private int x;
-	/** 二つ目の値 */
+	/** 数値２ */
 	private int y;
 	
+	/**
+	 * 受け取ったint型の引数を変数xに代入する
+	 * @param x　数値１
+	 */
 	public void setNum1(int x) {
 		this.x = x;
 	}
 	
+	/**
+	 * 受け取ったint型の引数を変数yに代入する
+	 * @param y　数値２
+	 */
 	public void setNum2(int y) {
 		this.y = y;
 	}
 	
+	/**
+	 * 変数xを戻り値として返す
+	 * @return　数値１
+	 */
 	public int getNum1() {
 		return x;
 	}
 	
+	/**
+	 * 変数yを戻り値として返す
+	 * @return　数値２
+	 */
 	public int getNum2() {
 		return y;
 	}
