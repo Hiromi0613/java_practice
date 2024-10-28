@@ -71,9 +71,9 @@ public class Problem2 {
 		Process service = manager.getInstance(mode);
 		
 		// 名前、年齢入力チェック
-		boolean result = service.check(inputName, inputAge);
+		boolean isInputConditions = service.check(inputName, inputAge);
 		
-		if(!result) {
+		if(!isInputConditions) {
 			System.exit(0);
 		}
 		
