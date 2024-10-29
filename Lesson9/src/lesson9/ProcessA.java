@@ -5,11 +5,6 @@ package lesson9;
  * Processインターフェースを実装
  */
 public class ProcessA implements Process {	
-	/** 名前 */
-	String name;
-	/** 年齢 */
-	int age;
-	
 	/**
 	 * checkメソッド
 	 * 引数name,ageをpersonalクラスに格納する
@@ -19,9 +14,6 @@ public class ProcessA implements Process {
 	 * @return boolean型の戻り値を返す
 	 */
 	public boolean check(String name, int age) {
-		this.name = name;
-		this.age = age;
-		
 		if(name.length() < 10 && (age >= 0 && age <= 140)) {
 			return true;	
 		} else {
@@ -33,7 +25,7 @@ public class ProcessA implements Process {
 	 * runメソッド
 	 * 出力する
 	 */
-	public void run() {
+	public void run(String name, int age) {
 		System.out.println("私の名前は" + name + "です。年齢は" + age + "です。");
 	}
 }

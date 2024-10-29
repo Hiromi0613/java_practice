@@ -3,7 +3,7 @@ package lesson9;
 /**
  * Processインターフェース
  */
-interface Process {
+public interface Process {
 	/**
 	 * checkメソッド
 	 * @param name 名前
@@ -14,5 +14,5 @@ interface Process {
 	/**
 	 * runメソッド
 	 */
-	void run();
+	void run(String name, int age);
 }

@@ -71,6 +71,6 @@ public class Problem1 {
 		int result = base.calculate(inputNum1, inputNum2);
 		
 		// 計算結果出力
-		base.show(result);
+		base.show(inputNum1, inputNum2, result);
 	}
 }

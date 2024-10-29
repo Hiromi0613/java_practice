@@ -5,11 +5,6 @@ package lesson9;
  * CalculateBaseインターフェースを実装
  */
 public class Multiplication implements CalculateBase {
-	/** 数値１ */
-	private int x;
-	/** 数値２ */
-	private int y;
-	
 	/**
 	 * calculateメソッド
 	 *　二つの値の掛け算を行う
@@ -18,9 +13,6 @@ public class Multiplication implements CalculateBase {
 	 * @return 計算結果
 	 */
 	public int calculate(int x, int y) {
-		this.x = x;
-		this.y = y;
-		
 		return  x * y;
 	}
 	
@@ -29,7 +21,7 @@ public class Multiplication implements CalculateBase {
 	 * 計算結果を出力
 	 * @param result 計算結果
 	 */
-	public void show(int result) {
+	public void show(int x, int y, int result) {
 		System.out.println(x + "*" + y + "=" + result);
 	}
 }

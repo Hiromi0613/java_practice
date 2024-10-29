@@ -3,7 +3,7 @@ package lesson9;
 /**
  * CalculateBaseインターフェース
  */
-interface CalculateBase {
+public interface CalculateBase {
 	/**
 	 * calculatteメソッド
 	 * @param x　一つ目の値の引数
@@ -16,5 +16,5 @@ interface CalculateBase {
 	 * showメソッド
 	 * @param 計算結果
 	 */
-	void show(int result);
+	void show(int x, int y, int result);
 }

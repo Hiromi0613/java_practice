@@ -78,6 +78,6 @@ public class Problem2 {
 		}
 		
 		// 処理実行
-		service.run();
+		service.run(inputName, inputAge);
 	}
 }
