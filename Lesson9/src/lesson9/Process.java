@@ -13,6 +13,8 @@ public interface Process {
 	
 	/**
 	 * runメソッド
+	 * @param name 　名前
+	 * @param age　年齢
 	 */
 	void run(String name, int age);
 }

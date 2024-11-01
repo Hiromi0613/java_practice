@@ -19,6 +19,8 @@ public class Addition implements CalculateBase {
 	/**
 	 * showメソッド
 	 * 計算結果を出力
+	 * @param x 数値１
+	 * @param y 数値２
 	 * @param result 計算結果
 	 */
 	public void show(int x, int y, int result) {

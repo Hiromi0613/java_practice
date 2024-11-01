@@ -68,16 +68,16 @@ public class Problem2 {
 		int inputAge = personal.getAge();
 		
 		ServiceManager manager = new ServiceManager();
-		Process service = manager.getInstance(mode);
+		Process process = manager.getInstance(mode);
 		
 		// 名前、年齢入力チェック
-		boolean isInputConditions = service.check(inputName, inputAge);
+		boolean isInputConditions = process.check(inputName, inputAge);
 		
 		if(!isInputConditions) {
 			System.exit(0);
 		}
 		
 		// 処理実行
-		service.run(inputName, inputAge);
+		process.run(inputName, inputAge);
 	}
 }

@@ -14,7 +14,7 @@ public class ProcessB implements Process {
 	 * @return boolean型の戻り値を返す
 	 */
 	public boolean check(String name, int age) {
-		if((name.length() >= 5 && name.length() <= 20) && (age >= 30 && age <= 60)) {
+		if(name.length() >= 5 && name.length() <= 20 && age >= 30 && age <= 60) {
 			return true;	
 		} else {
 			return false;
@@ -24,6 +24,8 @@ public class ProcessB implements Process {
 	/**
 	 * runメソッド
 	 * 出力する
+	 * @param name 　名前
+	 * @param age　年齢
 	 */
 	public void run(String name, int age) {
 		System.out.println("名前：" + name);

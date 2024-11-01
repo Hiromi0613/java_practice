@@ -56,13 +56,13 @@ public class Problem1 {
 		String str3 = br.readLine();
 		int num2 = Integer.parseInt(str3);
 		
-		Number number = new Number();
+		InputDate inputDate = new InputDate();
 		
-		number.setNum1(num1);
-		number.setNum2(num2);
+		inputDate.setNum1(num1);
+		inputDate.setNum2(num2);
 		
-		int inputNum1 = number.getNum1();
-		int inputNum2 = number.getNum2();
+		int inputNum1 = inputDate.getNum1();
+		int inputNum2 = inputDate.getNum2();
 		
 		CalculateManager manager = new CalculateManager();
 		CalculateBase base = manager.getInstance(operator);

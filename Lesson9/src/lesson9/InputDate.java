@@ -1,9 +1,9 @@
 package lesson9;
 
 /**
- * Numberクラス
+ * InputDateクラス
  */
-public class Number {
+public class InputDate {
 	/** 数値１ */
 	private int x;
 	/** 数値２ */
