@@ -71,10 +71,8 @@ public class Problem1 {
 			process.run(inputName, inputAge);
 		} catch(CustomException ce) {
 			System.out.println(ce.getMessage());
-			ce.printStackTrace();
 		} catch(NumberFormatException ne) {
 			System.out.println("処理モードと年齢は数字を入力してください。");
-			ne.printStackTrace();
 		}
 	}
 }
