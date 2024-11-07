@@ -14,7 +14,7 @@ import java.io.InputStreamReader;
  * 出力例）
  * 1
  * 山田太郎
- * 25
+ * 27
  * 私の名前は山田太郎です。年齢は25です。
  * 
  * 2
