@@ -2,6 +2,6 @@ package test;
 
 public class Problem1 {
 	public static void main(String[] args) {
-		System.out.println("ハローワールド");
+		System.out.println("ハロワールド");
 	}
 }
